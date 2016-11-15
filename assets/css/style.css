@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Cormorant+Garamond|Josefin+Sans|Playfair+Display|Quicksand');
+
+body {
+    background-image: url('http://www.hotel-r.net/im/hotel/mx/tropical-resort-13.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+nav .brand-logo {
+    padding-left: 25px;
+    font-family: 'Abhaya Libre', serif;
+    color: #76C7CA;
+}
+
+nav {
+    background-color: #fff;
+}
+
+nav .nav-list a{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #76C7CA;
+}
+
+.form-box {
+    margin: 100px auto 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
