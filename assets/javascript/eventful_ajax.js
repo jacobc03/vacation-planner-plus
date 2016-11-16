@@ -1,4 +1,10 @@
 $(document).ready(function(){	
+	// $('.datepicker').pickadate({
+ //    // selectMonths: true, // Creates a dropdown to control month
+ //    // selectYears: 15, // Creates a dropdown of 15 years to control year
+ //    format: 'yyyymmdd'
+	// });
+
 	$("#submitData").on("click", function () {
 		var query = {
 		app_key: 'skPQ5QR4bdjwpz7m',
@@ -6,9 +12,12 @@ $(document).ready(function(){
 		date: '',
 		page_size: ''
 		};
+
 		query.location = $("#location").val();
 		console.log(query.location);
-		query.date = $("#when").val();
+		var startDate = $("#startDate").val().split('-').join('')+'00';
+		var endDate= $("#endDate").val().split('-').join('')+'00';
+		query.date = startDate+"-"+endDate;
 		console.log(query.date);
 		query.page_size = $("#size").val();
 

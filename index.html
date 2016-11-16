@@ -13,11 +13,11 @@
         <body>
             <nav>
                 <div class="nav-wrapper">
-                  <a href="#" class="brand-logo">Vacation Planner Plus</a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down nav-list">
+                    <a href="#" class="brand-logo">Vacation Planner Plus</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                  </ul>
+                </ul>
                 </div>
             </nav>
             <div class="row">
@@ -35,12 +35,12 @@
                        <div class="row">
                             <h6>When?</h6>
                             <div class="input-field col s6">
+                                <label for="startDate"></label>
                                 <input id="startDate" type="date" class="datepicker">
-                                <label for="to"></label>
                             </div>
                             <div class="input-field col s6">
+                                <label for="endDate"></label>
                                 <input id="endDate" type="date" class="datepicker">
-                                <label for="from"></label>
                             </div>
                         </div>
                         </div>
@@ -91,6 +91,9 @@
                         <a class="waves-effect waves-light btn" id="submitData">Submit</a>
                     </form>
                   </div>
+                  <div class="row">
+                      <div id="response-Data"></div>
+                  </div>
                 </div>
             </div>
 <!--
@@ -105,5 +108,6 @@
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <!-- Compiled and minified JavaScript -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+            <script type="text/javascript" src="assets/javascript/eventful_ajax.js"></script>
         </body>
   </html>
