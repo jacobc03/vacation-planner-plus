@@ -11,6 +11,14 @@
         </head>
 
         <body>
+<!--
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="http://www.hotel-r.net/im/hotel/mx/tropical-resort-13.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
+                <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
+                <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
+            </div>
+-->
             <nav>
                 <div class="nav-wrapper">
                   <a href="#" class="brand-logo">Vacation Planner Plus</a>
@@ -21,12 +29,17 @@
                 </div>
             </nav>
             <div class="row">
+                <div class="col s6 offset-s3" id="welcome">
+                    <h2>Where are you traveling to?</h2>
+                    <h5>Plan Your Escape</h5>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col s6 offset-s3 form-box">   
                   <div class="row">
-                    <h5>Where are you traveling to?</h5>
                     <form class="col s12">
                         <div class="row">
-                            <h6>Location?</h6>
+                            <h6 id="locationLabel">Location?</h6>
                             <div class="input-field col s12">
                                 <input id="location" type="text" class="validate">
                                 <label for="location">Traveling to...</label>
@@ -43,67 +56,63 @@
                                 <label for="from"></label>
                             </div>
                         </div>
-                        </div>
                         <div class="row">
                             <div class="input-field col s4">
                                 <p>
-                                    <input type="checkbox" class="concerts" />
+                                    <input type="checkbox" id="concerts" />
                                     <label for="concerts">Concerts</label>
                                 </p>
                                 <p>
-                                    <input type="checkbox" class="nightlife" />
+                                    <input type="checkbox" id="nightlife" />
                                     <label for="nightlife">Nightlife</label>
                                 </p>
                                 <p>
-                                    <input type="checkbox" class="comedy" />
+                                    <input type="checkbox" id="comedy" />
                                     <label for="comedy">Comedy</label>
                                 </p>
                             </div>
                             <div class="input-field col s4">
                                 <p>
-                                    <input type="checkbox" class="festivals" />
+                                    <input type="checkbox" id="festivals" />
                                     <label for="festivals">Festivals</label>
                                 </p>
                                 <p>
-                                    <input type="checkbox" class="sports" />
+                                    <input type="checkbox" id="sports" />
                                     <label for="sports">Sports</label>
                                 </p>
                                 <p>
-                                    <input type="checkbox" class="family" />
+                                    <input type="checkbox" id="family" />
                                     <label for="family">Family</label>
                                 </p>
                             </div>
                             <div class="input-field col s4">
                                 <p>
-                                    <input type="checkbox" class="movies" />
+                                    <input type="checkbox" id="movies" />
                                     <label for="movies">Movies</label>
                                 </p>
                                 <p>
-                                    <input type="checkbox" class="outdoor" />
+                                    <input type="checkbox" id="outdoor" />
                                     <label for="outdoor">Outdoor</label>
                                 </p>
                                 <p>
-                                    <input type="checkbox" class="pets" />
+                                    <input type="checkbox" id="pets" />
                                     <label for="pets">Pets</label>
                                 </p>
                             </div>
                         </div>
-                        <a class="waves-effect waves-light btn" id="submitData">Submit</a>
+                        <div class="row">
+                            <div class="col s2 offset-s5">
+                                <a class="waves-effect waves-light btn" id="submitData">Submit</a>
+                            </div>
+                        </div>
                     </form>
                   </div>
                 </div>
             </div>
-<!--
-            <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
-                <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
-                <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
-                <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
-            </div>
--->
             <!--Import jQuery before our js-->
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <!-- Compiled and minified JavaScript -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+            <script type="text/javascript">$('.carousel.carousel-slider').carousel({full_width: true});</script>
         </body>
   </html>
