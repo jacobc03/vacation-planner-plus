@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Cormorant+Garamond|Josefin+Sans|Playfair+Display|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Source+Sans+Pro');
 
 body {
     background-image: url('http://www.hotel-r.net/im/hotel/mx/tropical-resort-13.jpg');
@@ -6,6 +6,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.carousel {
+    z-index: -1;
 }
 
 nav .brand-logo {
@@ -19,16 +23,32 @@ nav {
 }
 
 nav .nav-list a{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #76C7CA;
 }
 
+#welcome {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px #020202;
+    z-index: 10;
+    padding-top: 50px;
+}
+
 .form-box {
-    margin: 100px auto 0;
+    margin: 20px auto 0;
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+#locationLabel {
+    padding-top: 20px;
 }
 
 .btn {
+    text-align: center;
+    display: inline-block;
     margin: 0 auto;
 }
 
