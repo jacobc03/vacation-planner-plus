@@ -42,7 +42,10 @@ $(document).ready(function(){
 				eventInfo.append("<strong>"+response.events.event[i].title+"</strong><br>");
 				eventInfo.append(response.events.event[i].venue_name+"<br>");
 				eventInfo.append(response.events.event[i].venue_address);
-				eventInfo.addClass("textRight")
+				eventInfo.attr({
+					latitude: response.events.event[i].latitude,
+					longitude: response.events.event[i].longitude
+				});
 				$("#response-Data").append(eventInfo);
 			}
 		}); 
