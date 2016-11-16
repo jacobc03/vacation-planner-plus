@@ -4,7 +4,10 @@
             <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <!-- Compiled and minified CSS -->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+            <!-- Orginal Style Sheet -->
             <link rel="stylesheet" href="assets/css/style.css">
+            <!-- Contact Page Style Sheet -->
+            <link rel="stylesheet" href="assets/css/contactStyle.css">
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </head>
@@ -20,20 +23,65 @@
                 </div>
             </nav>
             
+            <div class="container">
+                <div class="contactForm">
+                    <div class="row">
+                        <form class="col s12">
+
+                            <div class="row">
+                                <!-- First Name input Field -->
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input  id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <!-- Last Name input Field  -->
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <!-- Email input Field  -->
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div> 
+
+                            <div class="row">
+                                <!-- Message input Field  -->
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Message</label>
+                                </div>
+                            </div>
+                      
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <!-- Sumbit Button  -->
+                                    <button class="btn waves-effect waves-light" id="contactButton" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
                         
                         
              
-<!--
-            <div class="carousel carousel-slider">
-                <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
-                <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
-                <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
-                <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
-            </div>
--->
+
             <!--Import jQuery before our js-->
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <!-- Compiled and minified JavaScript -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+            <script type="text/javascript" src="assets/javascript/contact.js"></script>
         </body>
   </html>
