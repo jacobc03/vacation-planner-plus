@@ -21,11 +21,11 @@
 -->
             <nav>
                 <div class="nav-wrapper">
-                  <a href="#" class="brand-logo">Vacation Planner Plus</a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
+                    <a href="#" class="brand-logo">Vacation Planner Plus</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
             <div class="row">
@@ -36,24 +36,69 @@
             </div>
             <div class="row">
                 <div class="col s6 offset-s3 form-box">   
-                  <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <h6 id="locationLabel">Location?</h6>
-                            <div class="input-field col s12">
-                                <input id="location" type="text" class="validate">
-                                <label for="location">Traveling to...</label>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <h6 id="locationLabel">Location?</h6>
+                                <div class="input-field col s12">
+                                    <input id="location" type="text" class="validate">
+                                    <label for="location">Traveling to...</label>
+                                </div>
                             </div>
-                        </div>
-                       <div class="row">
-                            <h6>When?</h6>
-                            <div class="input-field col s6">
-                                <input id="startDate" type="date" class="datepicker">
-                                <label for="to"></label>
+                            <div class="row">
+                                <h6>When?</h6>
+                                <div class="input-field col s6">
+                                    <label for="startDate"></label>
+                                    <input id="startDate" type="date" class="datepicker">
+                                </div>
+                                <div class="input-field col s6">
+                                    <label for="endDate"></label>
+                                    <input id="endDate" type="date" class="datepicker">
+                                </div>
                             </div>
-                            <div class="input-field col s6">
-                                <input id="endDate" type="date" class="datepicker">
-                                <label for="from"></label>
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <p>
+                                        <input type="checkbox" id="concerts" />
+                                        <label for="concerts">Concerts</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="nightlife" />
+                                        <label for="nightlife">Nightlife</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="comedy" />
+                                        <label for="comedy">Comedy</label>
+                                    </p>
+                                </div>
+                                <div class="input-field col s4">
+                                    <p>
+                                        <input type="checkbox" id="festivals" />
+                                        <label for="festivals">Festivals</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="sports" />
+                                        <label for="sports">Sports</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="family" />
+                                        <label for="family">Family</label>
+                                    </p>
+                                </div>
+                                <div class="input-field col s4">
+                                    <p>
+                                        <input type="checkbox" id="movies" />
+                                        <label for="movies">Movies</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="outdoor" />
+                                        <label for="outdoor">Outdoor</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="pets" />
+                                        <label for="pets">Pets</label>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -71,49 +116,22 @@
                                     <input type="checkbox" id="comedy" />
                                     <label for="comedy">Comedy</label>
                                 </p>
+                            <div class="row">
+                                <div class="col s2 offset-s5">
+                                    <a class="waves-effect waves-light btn" id="submitData">Submit</a>
+                                </div>
                             </div>
-                            <div class="input-field col s4">
-                                <p>
-                                    <input type="checkbox" id="festivals" />
-                                    <label for="festivals">Festivals</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" id="sports" />
-                                    <label for="sports">Sports</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" id="family" />
-                                    <label for="family">Family</label>
-                                </p>
-                            </div>
-                            <div class="input-field col s4">
-                                <p>
-                                    <input type="checkbox" id="movies" />
-                                    <label for="movies">Movies</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" id="outdoor" />
-                                    <label for="outdoor">Outdoor</label>
-                                </p>
-                                <p>
-                                    <input type="checkbox" id="pets" />
-                                    <label for="pets">Pets</label>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s2 offset-s5">
-                                <a class="waves-effect waves-light btn" id="submitData">Submit</a>
-                            </div>
-                        </div>
-                    </form>
-                  </div>
+                        </form>
+                    </div>
                 </div>
+            </div>
+            <div class="row">
+                <div id="response-Data" class="col s6 offset-s3 form-box"></div>
             </div>
             <!--Import jQuery before our js-->
             <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
             <!-- Compiled and minified JavaScript -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-            <script type="text/javascript">$('.carousel.carousel-slider').carousel({full_width: true});</script>
+            <script type="text/javascript" src="assets/javascript/eventful_ajax.js"></script>
         </body>
   </html>
