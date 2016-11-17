@@ -1,3 +1,36 @@
+/*document level styling*/
 body {
 	background-image: none;
+}
+
+/*nav level styling*/
+
+/*results_container level styling*/
+
+/*flight_results level styling*/
+#flight_results {
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+/*hotel_results level styling*/
+
+/*events_results level styling*/
+#events_results {
+	width: 100%;
+	height: 100%;
+	background-color: yellow;
+	float: left;
+	position: relative;
+}
+
+/*map_results level styling*/
+#map_results {
+	width: 480px;
+	height: 300px;
+	background-color: black;
+	float: left;
+	overflow: hidden;
+	display: inline;
 }
