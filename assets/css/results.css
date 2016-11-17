@@ -15,11 +15,11 @@ body {
 
 /*events_results level styling*/
 #events_results {
-background: yellow
+background:white;
+padding-right: 5px;
 }
 
 /*map_results level styling*/
 #map_results {
- background: black;
- color: white;
+ background:white;
 }
