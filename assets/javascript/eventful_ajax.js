@@ -1,17 +1,25 @@
 $(document).ready(function(){	
-	// $('.datepicker').pickadate({
- //    // selectMonths: true, // Creates a dropdown to control month
- //    // selectYears: 15, // Creates a dropdown of 15 years to control year
- //    format: 'yyyymmdd'
-	// });
 
 	$("#submitData").on("click", function () {
 		var query = {
 		app_key: 'skPQ5QR4bdjwpz7m',
 		location: '',
 		date: '',
-		page_size: ''
+		c: '',
+		page_size: '10'
 		};
+
+		var checkmarks = [];
+
+		$("input:checkbox").each(function(){
+		    var check = $(this);
+
+		    if(check.is(":checked")){
+		        query.c = check.attr("id");
+		    }
+		});
+
+		console.log(checkmarks);
 
 		query.location = $("#location").val();
 		console.log(query.location);
@@ -19,7 +27,6 @@ $(document).ready(function(){
 		var endDate= $("#endDate").val().split('-').join('')+'00';
 		query.date = startDate+"-"+endDate;
 		console.log(query.date);
-		query.page_size = $("#size").val();
 
 		var url = 'http://api.eventful.com/jsonp/events/search?'+ $.param(query);
 
